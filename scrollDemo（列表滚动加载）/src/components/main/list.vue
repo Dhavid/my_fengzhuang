@@ -1,6 +1,6 @@
 <template>
   <div v-scroll = "onScroll" :class="$style.app" >
-    <div  v-for = "item in list">
+    <div  v-for = "(item,index) in list" :key="index">
       <img v-bind:src = "item.pic_url" alt="图片">
       <br><br>
     </div>
